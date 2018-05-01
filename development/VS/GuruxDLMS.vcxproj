@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>GuruxDLMS</ProjectName>
+    <ProjectGuid>{9E063408-C11A-4C0C-BEAA-9D07E2E0A00A}</ProjectGuid>
+    <RootNamespace>GuruxDLMS</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\chipperingenums.h" />
+    <ClInclude Include="..\include\Enums.h" />
+    <ClInclude Include="..\include\ErrorCodes.h" />
+    <ClInclude Include="..\include\GXAPDU.h" />
+    <ClInclude Include="..\include\GXApplicationContextName.h" />
+    <ClInclude Include="..\include\GXAttributeCollection.h" />
+    <ClInclude Include="..\include\GXAuthentication.h" />
+    <ClInclude Include="..\include\GXAuthenticationMechanismName.h" />
+    <ClInclude Include="..\include\gxbytebuffer.h" />
+    <ClInclude Include="..\include\GXCipher.h" />
+    <ClInclude Include="..\include\GXDate.h" />
+    <ClInclude Include="..\include\GXDateTime.h" />
+    <ClInclude Include="..\include\GXDLMS.h" />
+    <ClInclude Include="..\include\GXDLMSActionSchedule.h" />
+    <ClInclude Include="..\include\GXDLMSActionSet.h" />
+    <ClInclude Include="..\include\GXDLMSActivityCalendar.h" />
+    <ClInclude Include="..\include\GXDLMSAssociationLogicalName.h" />
+    <ClInclude Include="..\include\GXDLMSAssociationShortName.h" />
+    <ClInclude Include="..\include\GXDLMSAttribute.h" />
+    <ClInclude Include="..\include\GXDLMSAutoAnswer.h" />
+    <ClInclude Include="..\include\GXDLMSAutoConnect.h" />
+    <ClInclude Include="..\include\GXDLMSCaptureObject.h" />
+    <ClInclude Include="..\include\GXDLMSClient.h" />
+    <ClInclude Include="..\include\GXDLMSClock.h" />
+    <ClInclude Include="..\include\GXDLMSConnectionEventArgs.h" />
+    <ClInclude Include="..\include\GXDLMSContextType.h" />
+    <ClInclude Include="..\include\GXDLMSConverter.h" />
+    <ClInclude Include="..\include\GXDLMSData.h" />
+    <ClInclude Include="..\include\GXDLMSDayProfile.h" />
+    <ClInclude Include="..\include\GXDLMSDayProfileAction.h" />
+    <ClInclude Include="..\include\GXDLMSDemandRegister.h" />
+    <ClInclude Include="..\include\GXDLMSDisconnectControl.h" />
+    <ClInclude Include="..\include\GXDLMSEmergencyProfile.h" />
+    <ClInclude Include="..\include\GXDLMSExtendedRegister.h" />
+    <ClInclude Include="..\include\GXDLMSGPRSSetup.h" />
+    <ClInclude Include="..\include\GXDLMSHdlcSetup.h" />
+    <ClInclude Include="..\include\GXDLMSIECOpticalPortSetup.h" />
+    <ClInclude Include="..\include\GXDLMSImageActivateInfo.h" />
+    <ClInclude Include="..\include\GXDLMSImageTransfer.h" />
+    <ClInclude Include="..\include\GXDLMSIp4Setup.h" />
+    <ClInclude Include="..\include\GXDLMSIp4SetupIpOption.h" />
+    <ClInclude Include="..\include\GXDLMSLimiter.h" />
+    <ClInclude Include="..\include\GXDLMSLimits.h" />
+    <ClInclude Include="..\include\GXDLMSLNParameters.h" />
+    <ClInclude Include="..\include\GXDLMSLongTransaction.h" />
+    <ClInclude Include="..\include\GXDLMSMacAddressSetup.h" />
+    <ClInclude Include="..\include\GXDLMSMBusClient.h" />
+    <ClInclude Include="..\include\GXDLMSMBusMasterPortSetup.h" />
+    <ClInclude Include="..\include\GXDLMSMBusSlavePortSetup.h" />
+    <ClInclude Include="..\include\GXDLMSMd5.h" />
+    <ClInclude Include="..\include\GXDLMSMessageHandler.h" />
+    <ClInclude Include="..\include\GXDLMSModemConfiguration.h" />
+    <ClInclude Include="..\include\GXDLMSModemInitialisation.h" />
+    <ClInclude Include="..\include\GXDLMSMonitoredValue.h" />
+    <ClInclude Include="..\include\GXDLMSNotify.h" />
+    <ClInclude Include="..\include\GXDLMSObject.h" />
+    <ClInclude Include="..\include\GXDLMSObjectCollection.h" />
+    <ClInclude Include="..\include\GXDLMSObjectDefinition.h" />
+    <ClInclude Include="..\include\GXDLMSObjectFactory.h" />
+    <ClInclude Include="..\include\GXDLMSPppSetup.h" />
+    <ClInclude Include="..\include\GXDLMSPppSetupIPCPOption.h" />
+    <ClInclude Include="..\include\GXDLMSPppSetupLcpOption.h" />
+    <ClInclude Include="..\include\GXDLMSProfileGeneric.h" />
+    <ClInclude Include="..\include\GXDLMSPushSetup.h" />
+    <ClInclude Include="..\include\GXDLMSQualityOfService.h" />
+    <ClInclude Include="..\include\GXDLMSRegister.h" />
+    <ClInclude Include="..\include\GXDLMSRegisterActivation.h" />
+    <ClInclude Include="..\include\GXDLMSRegisterMonitor.h" />
+    <ClInclude Include="..\include\GXDLMSSapAssignment.h" />
+    <ClInclude Include="..\include\GXDLMSSchedule.h" />
+    <ClInclude Include="..\include\GXDLMSScheduleEntry.h" />
+    <ClInclude Include="..\include\GXDLMSScript.h" />
+    <ClInclude Include="..\include\GXDLMSScriptAction.h" />
+    <ClInclude Include="..\include\GXDLMSScriptTable.h" />
+    <ClInclude Include="..\include\GXDLMSSeasonProfile.h" />
+    <ClInclude Include="..\include\GXDLMSSecureClient.h" />
+    <ClInclude Include="..\include\GXDLMSSecureServer.h" />
+    <ClInclude Include="..\include\GXDLMSSecuritySetup.h" />
+    <ClInclude Include="..\include\GXDLMSServer.h" />
+    <ClInclude Include="..\include\GXDLMSSettings.h" />
+    <ClInclude Include="..\include\GXDLMSSha1.h" />
+    <ClInclude Include="..\include\GXDLMSSha256.h" />
+    <ClInclude Include="..\include\GXDLMSSNParameters.h" />
+    <ClInclude Include="..\include\GXDLMSSpecialDay.h" />
+    <ClInclude Include="..\include\GXDLMSSpecialDaysTable.h" />
+    <ClInclude Include="..\include\GXDLMSTcpUdpSetup.h" />
+    <ClInclude Include="..\include\GXDLMSValueEventArg.h" />
+    <ClInclude Include="..\include\GXDLMSValueEventCollection.h" />
+    <ClInclude Include="..\include\GXDLMSVariant.h" />
+    <ClInclude Include="..\include\GXDLMSWeekProfile.h" />
+    <ClInclude Include="..\include\GXGMac.h" />
+    <ClInclude Include="..\include\GXHelpers.h" />
+    <ClInclude Include="..\include\GXReplyData.h" />
+    <ClInclude Include="..\include\GXSecure.h" />
+    <ClInclude Include="..\include\GXSerialNumberCounter.h" />
+    <ClInclude Include="..\include\GXSNInfo.h" />
+    <ClInclude Include="..\include\GXStandardObisCode.h" />
+    <ClInclude Include="..\include\GXStandardObisCodeCollection.h" />
+    <ClInclude Include="..\include\GXTime.h" />
+    <ClInclude Include="..\include\IGXDLMSBase.h" />
+    <ClInclude Include="..\include\OBiscodes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\DLMSPort.c" />
+    <ClCompile Include="..\src\GXAdjacentCell.c" />
+    <ClCompile Include="..\src\GXAPDU.c" />
+    <ClCompile Include="..\src\GXApplicationContextName.c" />
+    <ClCompile Include="..\src\GXAttributeCollection.c" />
+    <ClCompile Include="..\src\GXAuthentication.c" />
+    <ClCompile Include="..\src\GXAuthenticationMechanismName.c" />
+    <ClCompile Include="..\src\GXBytebuffer.c" />
+    <ClCompile Include="..\src\GXCipher.c" />
+    <ClCompile Include="..\src\GXDataInfo.c" />
+    <ClCompile Include="..\src\GXDateTime.c" />
+    <ClCompile Include="..\src\GXDLMS.c" />
+    <ClCompile Include="..\src\GXDLMSActionItem.c" />
+    <ClCompile Include="..\src\GXDLMSActionSchedule.c" />
+    <ClCompile Include="..\src\GXDLMSActionSet.c" />
+    <ClCompile Include="..\src\GXDLMSActivityCalendar.c" />
+    <ClCompile Include="..\src\GXDLMSAssociationLogicalName.c" />
+    <ClCompile Include="..\src\GXDLMSAssociationShortName.c" />
+    <ClCompile Include="..\src\GXDLMSAttribute.c" />
+    <ClCompile Include="..\src\GXDLMSAutoAnswer.c" />
+    <ClCompile Include="..\src\GXDLMSAutoConnect.c" />
+    <ClCompile Include="..\src\GXDLMSCaptureObject.c" />
+    <ClCompile Include="..\src\GXDLMSClient.c" />
+    <ClCompile Include="..\src\GXDLMSClock.c" />
+    <ClCompile Include="..\src\GXDLMSConnectionEventArgs.c" />
+    <ClCompile Include="..\src\GXDLMSContextType.c" />
+    <ClCompile Include="..\src\GXDLMSConverter.c" />
+    <ClCompile Include="..\src\GXDLMSData.c" />
+    <ClCompile Include="..\src\GXDLMSDayProfile.c" />
+    <ClCompile Include="..\src\GXDLMSDayProfileAction.c" />
+    <ClCompile Include="..\src\GXDLMSDemandRegister.c" />
+    <ClCompile Include="..\src\GXDLMSDisconnectControl.c" />
+    <ClCompile Include="..\src\GXDLMSEmergencyProfile.c" />
+    <ClCompile Include="..\src\GXDLMSExtendedRegister.c" />
+    <ClCompile Include="..\src\GXDLMSHdlcSetup.c" />
+    <ClCompile Include="..\src\GXDLMSIECOpticalPortSetup.c" />
+    <ClCompile Include="..\src\GXDLMSImageActivateInfo.c" />
+    <ClCompile Include="..\src\GXDLMSImageTransfer.c" />
+    <ClCompile Include="..\src\GXDLMSIp4Setup.c" />
+    <ClCompile Include="..\src\GXDLMSIp4SetupIpOption.c" />
+    <ClCompile Include="..\src\GXDLMSLimiter.c" />
+    <ClCompile Include="..\src\GXDLMSLimits.c" />
+    <ClCompile Include="..\src\GXDLMSLNParameters.c" />
+    <ClCompile Include="..\src\GXDLMSLongTransaction.c" />
+    <ClCompile Include="..\src\GXDLMSMacAddressSetup.c" />
+    <ClCompile Include="..\src\GXDLMSMd5.c" />
+    <ClCompile Include="..\src\GXDLMSMessageHandler.c" />
+    <ClCompile Include="..\src\GXDLMSModemConfiguration.c" />
+    <ClCompile Include="..\src\GXDLMSModemInitialisation.c" />
+    <ClCompile Include="..\src\GXDLMSMonitoredValue.c" />
+    <ClCompile Include="..\src\GXDLMSNotify.c" />
+    <ClCompile Include="..\src\GXDLMSObject.c" />
+    <ClCompile Include="..\src\GXDLMSObjectCollection.c" />
+    <ClCompile Include="..\src\GXDLMSObjectDefinition.c" />
+    <ClCompile Include="..\src\GXDLMSObjectFactory.c" />
+    <ClCompile Include="..\src\GXDLMSProfileGeneric.c" />
+    <ClCompile Include="..\src\GXDLMSPushObject.c" />
+    <ClCompile Include="..\src\GXDLMSPushSetup.c" />
+    <ClCompile Include="..\src\GXDLMSQualityOfService.c" />
+    <ClCompile Include="..\src\GXDLMSRegister.c" />
+    <ClCompile Include="..\src\GXDLMSRegisterActivation.c" />
+    <ClCompile Include="..\src\GXDLMSRegisterMonitor.c" />
+    <ClCompile Include="..\src\GXDLMSSapAssignment.c" />
+    <ClCompile Include="..\src\GXDLMSSchedule.c" />
+    <ClCompile Include="..\src\GXDLMSScheduleEntry.c" />
+    <ClCompile Include="..\src\GXDLMSScript.c" />
+    <ClCompile Include="..\src\GXDLMSScriptAction.c" />
+    <ClCompile Include="..\src\GXDLMSScriptTable.c" />
+    <ClCompile Include="..\src\GXDLMSSeasonProfile.c" />
+    <ClCompile Include="..\src\GXDLMSSecureServer.c" />
+    <ClCompile Include="..\src\GXDLMSSecuritySetup.c" />
+    <ClCompile Include="..\src\GXDLMSServer.c" />
+    <ClCompile Include="..\src\GXDLMSSettings.c" />
+    <ClCompile Include="..\src\GXDLMSSha1.c" />
+    <ClCompile Include="..\src\GXDLMSSha256.c" />
+    <ClCompile Include="..\src\GXDLMSSNParameters.c" />
+    <ClCompile Include="..\src\GXDLMSSpecialDay.c" />
+    <ClCompile Include="..\src\GXDLMSSpecialDaysTable.c" />
+    <ClCompile Include="..\src\GXDLMSTcpUdpSetup.c" />
+    <ClCompile Include="..\src\GXDLMSValueEventArg.c" />
+    <ClCompile Include="..\src\GXDLMSValueEventCollection.c" />
+    <ClCompile Include="..\src\GXDLMSVariant.c" />
+    <ClCompile Include="..\src\GXDLMSWeekProfile.c" />
+    <ClCompile Include="..\src\GXHelpers.c" />
+    <ClCompile Include="..\src\GXReplyData.c" />
+    <ClCompile Include="..\src\GXSecure.c" />
+    <ClCompile Include="..\src\GXSerialNumberCounter.c" />
+    <ClCompile Include="..\src\GXSNInfo.c" />
+    <ClCompile Include="..\src\GXStandardObisCode.c" />
+    <ClCompile Include="..\src\GXStandardObisCodeCollection.c" />
+    <ClCompile Include="..\src\Map.c" />
+    <ClCompile Include="..\src\Optimize.c" />
+    <ClCompile Include="..\src\Pair.c" />
+    <ClCompile Include="..\src\String.c" />
+    <ClCompile Include="..\src\Vector.c" />
+    <ClCompile Include="..\src\WString.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
